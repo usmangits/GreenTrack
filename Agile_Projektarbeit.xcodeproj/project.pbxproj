@@ -15,6 +15,7 @@
 		B62FE519265BBCEE00B92551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62FE517265BBCEE00B92551 /* LaunchScreen.storyboard */; };
 		B62FE524265BBCEF00B92551 /* Agile_ProjektarbeitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FE523265BBCEF00B92551 /* Agile_ProjektarbeitTests.swift */; };
 		B62FE52F265BBCEF00B92551 /* Agile_ProjektarbeitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FE52E265BBCEF00B92551 /* Agile_ProjektarbeitUITests.swift */; };
+		B62FE53F265C2FA600B92551 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FE53E265C2FA600B92551 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B62FE52A265BBCEF00B92551 /* Agile_ProjektarbeitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Agile_ProjektarbeitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62FE52E265BBCEF00B92551 /* Agile_ProjektarbeitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agile_ProjektarbeitUITests.swift; sourceTree = "<group>"; };
 		B62FE530265BBCEF00B92551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62FE53E265C2FA600B92551 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B62FE515265BBCEE00B92551 /* Assets.xcassets */,
 				B62FE517265BBCEE00B92551 /* LaunchScreen.storyboard */,
 				B62FE51A265BBCEE00B92551 /* Info.plist */,
+				B62FE53E265C2FA600B92551 /* MapViewController.swift */,
 			);
 			path = Agile_Projektarbeit;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B62FE511265BBCEB00B92551 /* ViewController.swift in Sources */,
 				B62FE50D265BBCEB00B92551 /* AppDelegate.swift in Sources */,
 				B62FE50F265BBCEB00B92551 /* SceneDelegate.swift in Sources */,
+				B62FE53F265C2FA600B92551 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
