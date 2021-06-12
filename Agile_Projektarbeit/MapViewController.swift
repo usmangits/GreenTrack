@@ -68,7 +68,7 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 
                 //Zooming in on annotation
                 let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude!, longitude!)
-                let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+                let span = MKCoordinateSpan(latitudeDelta: 5.1, longitudeDelta: 5.1)
                 let region = MKCoordinateRegion(center: coordinate, span: span)
                 self.mapOutlet.setRegion(region, animated: true)
             }
