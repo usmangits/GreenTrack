@@ -1,6 +1,8 @@
 
 import UIKit
 import MapKit
+import CoreLocation
+import Foundation
 
 class MapViewController: UIViewController, UISearchBarDelegate {
 
@@ -13,13 +15,22 @@ class MapViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var mapOutlet: MKMapView!
     
-  
+    @IBOutlet weak var ortLb: UILabel!
+    
     @IBAction func searchBt(_ sender: Any) {
         //Notwendig damit sich die Suche oeffnet wenn wir den Suchbutton klicken
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         present(searchController, animated: true, completion: nil)
     }
+    
+    
+    //Distanzberechnung
+    var ort = CLLocation()
+    var ort2 = CLLocation()
+    var alleOrte = Set<CLLocation>()
+    var i=0
+    var test = 0
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         UIApplication.shared.beginIgnoringInteractionEvents()
@@ -42,6 +53,8 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         
         let activeSearch = MKLocalSearch(request: searchRequest)
         
+
+        
         activeSearch.start{(response, errror) in
             
             activityIndicator.stopAnimating()
@@ -52,13 +65,36 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 print("ERROR")
             }
             else {
-                //Remove all annotations
-                let annotations = self.mapOutlet.annotations
-                self.mapOutlet.removeAnnotations(annotations)
+               
                 
                 //Getting data
                 let latitude = response?.boundingRegion.center.latitude
                 let longitude = response?.boundingRegion.center.longitude
+                
+                //Distanzberechnung
+                
+                //self.ortLb.text = "Ort:\(ort)"
+               //self.alleOrte.insert(self.ort)
+                
+                //Eigenes "Array"
+               if(self.test == 0)
+               {
+                self.ort = CLLocation(latitude: latitude!, longitude: longitude!)
+                    self.test = 1
+                
+                //Remove all annotations
+                let annotations = self.mapOutlet.annotations
+                self.mapOutlet.removeAnnotations(annotations)
+                }
+                else if (self.test == 1)
+                {
+                    self.ort2 = CLLocation(latitude: latitude!, longitude: longitude!)
+                    let distanceInMeters = self.ort.distance(from: self.ort2)// result is in meters
+                    self.ortLb.text = "Distanz: \(round(distanceInMeters/1000)) km"
+                    
+                    self.test = 0 //um Ort1 wieder zurückzusetzten
+                }
+                
                 
                 //Create annotation
                 let annotation = MKPointAnnotation()
@@ -71,11 +107,13 @@ class MapViewController: UIViewController, UISearchBarDelegate {
                 let span = MKCoordinateSpan(latitudeDelta: 5.1, longitudeDelta: 5.1)
                 let region = MKCoordinateRegion(center: coordinate, span: span)
                 self.mapOutlet.setRegion(region, animated: true)
+
+                }
             }
-        }
-        
-        
-        
+
     }
     
+    
+
+
 }

@@ -36,21 +36,25 @@ class ViewController: UIViewController {
         }
         else if (mittel==1)
         {
-            faktor = 0.00007
+            faktor = 0.00012
         }
         else if (mittel==2)
         {
-            faktor = 0.00004
+            faktor = 0.00007
         }
         else if (mittel==3)
         {
-            faktor = 0.00031
+            faktor = 0.00004
         }
         else if (mittel==4)
         {
-            faktor = 0.00025
+            faktor = 0.00031
         }
         else if (mittel==5)
+        {
+            faktor = 0.00025
+        }
+        else if (mittel==6)
         {
             faktor = 0.00002
         }
