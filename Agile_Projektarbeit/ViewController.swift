@@ -1,6 +1,12 @@
 
 import UIKit
 
+//Globale Variablen deklartion
+struct MyVariables {
+    static var ergFaktor:Double = 1.23432
+    static var globStrecke:Double = 1.23432
+}
+
 class ViewController: UIViewController {
 
     
@@ -16,8 +22,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var streckeOutlet: UITextField!
     @IBOutlet weak var faktorOutlet: UILabel!
     @IBOutlet weak var ergOutlet: UILabel!
-    
-    
     
     
     
@@ -61,12 +65,20 @@ class ViewController: UIViewController {
         
         erg = faktor * Double(strecke)
         
+        MyVariables.ergFaktor = erg
+        MyVariables.globStrecke = Double(strecke)
+        
         faktorOutlet.text = "Faktor für Ihre Auswahl: \(faktor)"
         ergOutlet.text = "Ergebnis in CO2 in t: \(erg)"
+        
     }
     
     
+
     
+    @IBAction func alternBt(_ sender: Any) {
+        self.performSegue(withIdentifier: "AlternViewController", sender: self)
+    }
 }
 
 

@@ -16,6 +16,7 @@
 		B62FE524265BBCEF00B92551 /* Agile_ProjektarbeitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FE523265BBCEF00B92551 /* Agile_ProjektarbeitTests.swift */; };
 		B62FE52F265BBCEF00B92551 /* Agile_ProjektarbeitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FE52E265BBCEF00B92551 /* Agile_ProjektarbeitUITests.swift */; };
 		B62FE53F265C2FA600B92551 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FE53E265C2FA600B92551 /* MapViewController.swift */; };
+		B671B2F226870D56009B4FC0 /* AlternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B671B2F126870D56009B4FC0 /* AlternViewController.swift */; };
 		B68981722675344A00B0BBDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68981712675344A00B0BBDD /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		B62FE52E265BBCEF00B92551 /* Agile_ProjektarbeitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agile_ProjektarbeitUITests.swift; sourceTree = "<group>"; };
 		B62FE530265BBCEF00B92551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62FE53E265C2FA600B92551 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B671B2F126870D56009B4FC0 /* AlternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternViewController.swift; sourceTree = "<group>"; };
 		B68981712675344A00B0BBDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				B62FE51A265BBCEE00B92551 /* Info.plist */,
 				B62FE53E265C2FA600B92551 /* MapViewController.swift */,
 				B68981712675344A00B0BBDD /* HomeViewController.swift */,
+				B671B2F126870D56009B4FC0 /* AlternViewController.swift */,
 			);
 			path = Agile_Projektarbeit;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				B68981722675344A00B0BBDD /* HomeViewController.swift in Sources */,
 				B62FE511265BBCEB00B92551 /* ViewController.swift in Sources */,
+				B671B2F226870D56009B4FC0 /* AlternViewController.swift in Sources */,
 				B62FE50D265BBCEB00B92551 /* AppDelegate.swift in Sources */,
 				B62FE50F265BBCEB00B92551 /* SceneDelegate.swift in Sources */,
 				B62FE53F265C2FA600B92551 /* MapViewController.swift in Sources */,
