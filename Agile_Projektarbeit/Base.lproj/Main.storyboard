@@ -43,14 +43,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-kZ-h76">
-                                <rect key="frame" x="170" y="473" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Berechnen"/>
-                                <connections>
-                                    <action selector="Btrechnen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6p-Zz-Gko"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="st1-27-KkO">
                                 <rect key="frame" x="10" y="183" width="394" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,6 +62,14 @@
                                 <state key="normal" title="Alternative"/>
                                 <connections>
                                     <action selector="alternBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nn9-2q-uYz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-kZ-h76">
+                                <rect key="frame" x="170" y="478" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Berechnen"/>
+                                <connections>
+                                    <action selector="Btrechnen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6p-Zz-Gko"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,7 +107,9 @@
                                 <rect key="frame" x="43" y="722" width="112" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <state key="normal" title="Rechner"/>
+                                <state key="normal" title="Rechner">
+                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="rechnerBT:" destination="S4T-Lf-uv2" eventType="touchUpInside" id="QST-N8-ZsY"/>
                                 </connections>
@@ -326,6 +328,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-h1-ynx">
+                                <rect key="frame" x="15" y="42" width="379" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7RO-ic-LC7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -356,6 +363,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
