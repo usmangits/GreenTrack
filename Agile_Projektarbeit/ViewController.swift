@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         MyVariables.globStrecke = Double(strecke)
         
         faktorOutlet.text = "Faktor für Ihre Auswahl: \(faktor)"
-        ergOutlet.text = "Ergebnis in CO2 in t: \(erg)"
+        ergOutlet.text = "Ergebnis Ausstoß CO2 in t: \(erg)"
         
     }
     
